@@ -6,16 +6,22 @@ namespace APITATT1.Model
     {
         [Key]
         public int id { get; set; }
+
         [Required]
         [StringLength(35)]
         public string Nome { get; set; }
-        [Required]
 
-        public int idade { get; set; }
         [Required]
-        public int telefone { get; set; }
+        public int idade { get; set; }
+
         [Required]
         public string Endereco { get; set; }
 
+        [Required]
+        [EmailAddress]
+        public string Email { get; set; }
+
+        [Required]
+        public string Especialidade { get; set; }
     }
 }
