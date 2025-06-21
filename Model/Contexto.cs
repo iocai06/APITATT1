@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using APITATT1.Model;
 
 namespace APITATT1.Model
 {
@@ -8,6 +9,8 @@ namespace APITATT1.Model
 
         public DbSet<Aluno> Alunos { get; set; }
         public DbSet<Treinador> Treinadores { get; set; }
+
+        public DbSet<User>  Users { get; set; }
         
     }
 }

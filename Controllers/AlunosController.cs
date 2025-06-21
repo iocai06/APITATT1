@@ -6,11 +6,13 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using APITATT1.Model;
+using Microsoft.AspNetCore.Authorization;
 
 namespace APITATT1.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    [Authorize]
     public class AlunosController : ControllerBase
     {
         private readonly Contexto _context;
